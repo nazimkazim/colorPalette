@@ -6,7 +6,7 @@ import { withStyles } from '@material-ui/styles';
 const styles = {
   root: {
     backgroundColor: 'blue',
-    height: '100%',
+    height: '100vh',
     display: 'flex',
     alignItems: 'flex-start',
     justifyContent: 'center'
@@ -16,8 +16,7 @@ const styles = {
     display: 'flex',
     alignItems: 'flex-start',
     flexDirection: 'column',
-    flexWrap: 'wrap',
-    border: '1px solid black'
+    flexWrap: 'wrap'
   },
   nav: {
     display: 'flex',
@@ -25,7 +24,7 @@ const styles = {
     justifyContent: 'space-between',
     color: 'white'
   },
-  pallets: {
+  palettes: {
     boxSizing: 'border-box',
     width: '100%',
     display: 'grid',
@@ -35,6 +34,9 @@ const styles = {
 };
 
 class PaletteList extends Component {
+  goToPalette(id) {
+    this.props.history.push(`/palette/${id}`);
+  }
   render() {
     const { palettes, classes } = this.props;
     return (
@@ -43,9 +45,12 @@ class PaletteList extends Component {
           <nav className={classes.nav}>
             <h1>React colors</h1>
           </nav>
-          <div className={classes.pallets}>
+          <div className={classes.palettes}>
             {palettes.map(palette => (
-              <MiniPalette {...palette} />
+              <MiniPalette
+                {...palette}
+                handleClick={() => this.goToPalette(palette.id)}
+              />
             ))}
           </div>
         </div>
