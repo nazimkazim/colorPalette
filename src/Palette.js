@@ -4,6 +4,18 @@ import 'rc-slider/assets/index.css';
 import './Palette.css';
 import NavBar from './NavBar';
 import PaletteFooter from './PaletteFooter';
+import { withStyles } from '@material-ui/styles';
+
+const styles = {
+  Palette: {
+    height: '100vh',
+    display: 'flex',
+    flexDirection: 'column'
+  },
+  colors: {
+    height: '90%'
+  }
+};
 
 class Pallette extends Component {
   constructor(props) {
@@ -25,6 +37,7 @@ class Pallette extends Component {
 
   render() {
     const { colors, paletteName, emoji, id } = this.props.palette;
+    const { classes } = this.props;
     const { level, format } = this.state;
     const colorBoxes = colors[level].map(color => (
       <ColorBox
@@ -37,18 +50,18 @@ class Pallette extends Component {
     ));
 
     return (
-      <div className="Palette">
+      <div className={classes.Palette}>
         <NavBar
           level={level}
           changeLevel={this.changeLevel}
           handleChange={this.changeFormat}
           showingAllColors={true}
         />
-        <div className="Palette-colors">{colorBoxes}</div>
+        <div className={classes.colors}>{colorBoxes}</div>
         <PaletteFooter paletteName={paletteName} emoji={emoji} />
       </div>
     );
   }
 }
 
-export default Pallette;
+export default withStyles(styles)(Pallette);
