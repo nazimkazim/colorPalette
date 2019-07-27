@@ -20,8 +20,7 @@ export default {
     color: 'white',
     alignItems: 'center',
     '& a': {
-      color: 'white',
-      
+      color: 'white'
     }
   },
   palettes: {
