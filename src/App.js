@@ -29,7 +29,7 @@ class App extends Component {
   }
 
   syncLocalStorage() {
-    window.localStorage.getItem(
+    window.localStorage.setItem(
       'palettes',
       JSON.stringify(this.state.palettes)
     );
