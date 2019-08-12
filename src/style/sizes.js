@@ -6,7 +6,8 @@ export default {
       xs: '575.98px',
       md: '767.98px',
       sm: '991.98px',
-      lg: '1198.98px'
+      lg: '1198.98px',
+      xl: '1600px'
     };
     return `@media (max-width:${sizes[size]})`;
   }
