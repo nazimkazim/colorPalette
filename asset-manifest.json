@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/colorPalette/static/css/main.61bd9032.chunk.css",
+    "main.js": "/colorPalette/static/js/main.61c39cec.chunk.js",
+    "main.js.map": "/colorPalette/static/js/main.61c39cec.chunk.js.map",
+    "runtime~main.js": "/colorPalette/static/js/runtime~main.d471004c.js",
+    "runtime~main.js.map": "/colorPalette/static/js/runtime~main.d471004c.js.map",
+    "static/css/2.e8e75e1a.chunk.css": "/colorPalette/static/css/2.e8e75e1a.chunk.css",
+    "static/js/2.a5a42451.chunk.js": "/colorPalette/static/js/2.a5a42451.chunk.js",
+    "static/js/2.a5a42451.chunk.js.map": "/colorPalette/static/js/2.a5a42451.chunk.js.map",
+    "index.html": "/colorPalette/index.html",
+    "precache-manifest.21304b16ceaba714f69fa09d1b437c20.js": "/colorPalette/precache-manifest.21304b16ceaba714f69fa09d1b437c20.js",
+    "service-worker.js": "/colorPalette/service-worker.js",
+    "static/css/2.e8e75e1a.chunk.css.map": "/colorPalette/static/css/2.e8e75e1a.chunk.css.map",
+    "static/css/main.61bd9032.chunk.css.map": "/colorPalette/static/css/main.61bd9032.chunk.css.map",
+    "static/media/svg-background.svg": "/colorPalette/static/media/svg-background.3c903835.svg"
+  }
+}
