@@ -2,12 +2,14 @@
   "name": "colors-app",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://nazimkazim.github.io/colorPalette/",
   "dependencies": {
     "@material-ui/core": "^4.1.1",
     "@material-ui/icons": "^4.2.0",
     "@material-ui/styles": "^4.1.1",
     "chroma-js": "^2.0.3",
     "emoji-mart": "^2.11.1",
+    "gh-pages": "^2.1.1",
     "rc-slider": "^8.6.13",
     "react": "^16.8.6",
     "react-color": "^2.17.3",
@@ -23,6 +25,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
